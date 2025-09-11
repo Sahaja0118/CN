@@ -55,4 +55,5 @@ class CachingHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), CachingHTTPRequestHandler) as httpd:
         print(f"Serving on port {PORT}...")
+        # Open browser -> http://localhost:8080
         httpd.serve_forever()
