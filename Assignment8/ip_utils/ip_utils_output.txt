@@ -1,0 +1,30 @@
+Enter an IP address (e.g., 192.168.1.1): 192.168.1.1
+
+Converting IP Address: 192.168.1.1
+--------------------------------------------------
+Split into octets -> ['192', '168', '1', '1']
+  Octet 1: 192 -> 11000000
+  Octet 2: 168 -> 10101000
+  Octet 3: 1 -> 00000001
+  Octet 4: 1 -> 00000001
+
+Combined 32-bit Binary -> 11000000101010000000000100000001
+Binary representation: 11000000101010000000000100000001
+
+Enter CIDR notation (e.g., 200.23.16.0/23): 200.1.1.0/24
+
+Processing CIDR: 200.1.1.0/24
+
+Converting IP Address: 200.1.1.0
+--------------------------------------------------
+Split into octets -> ['200', '1', '1', '0']
+  Octet 1: 200 -> 11001000
+  Octet 2: 1 -> 00000001
+  Octet 3: 1 -> 00000001
+  Octet 4: 0 -> 00000000
+
+Combined 32-bit Binary -> 11001000000000010000000100000000
+
+Network Prefix Length: /24
+Binary Prefix (first 24 bits): 110010000000000100000001
+Network prefix (binary): 110010000000000100000001

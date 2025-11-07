@@ -1,0 +1,16 @@
+---- Output Port Scheduler ----
+Enter number of packets: 5
+
+Enter packets in the form:
+SourceIP  DestIP  Payload  Priority(0=High,1=Med,2=Low)
+Packet 1: 192.168.1.1 0.0.0.0 DataPacket1 2
+Packet 2: 192.168.1.0 192.168.1.1 DataPacket2 0
+Packet 3: 192.168.1.2 192.168.1.1 VOIPPacket1 0
+Packet 4: 192.168.1.1 192.168.1.2 VideoPacket1 2
+Packet 5: 192.168.1.2 192.168.1.0 VideoPacket2 1
+
+--- FIFO Order ---
+DataPacket1  DataPacket2  VOIPPacket1  VideoPacket1  VideoPacket2
+
+--- Priority Order ---
+DataPacket2  VOIPPacket1  VideoPacket2  DataPacket1  VideoPacket1
